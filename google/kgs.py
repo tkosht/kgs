@@ -24,7 +24,6 @@ def parse_args():
 if __name__ == '__main__':
     args = parse_args()
 
-
     pattern='.itemListElement[].result|{"name": .name, "id": .["@id"], "type": .["@type"]}'
 
     api_key = open('.api_key').read()
